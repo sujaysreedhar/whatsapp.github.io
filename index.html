@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Whatsapp</title>
+  </head>
+  <body>
+<input type="text" id="number"><br><br>
+<button type="button" id="gen">Generate</button>
+<br><br>
+<div id="link"></div>
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+<script>
+  $( "#gen" ).click(function() {
+ $( "#link" ).html( '<a href="https://api.whatsapp.com/send?phone='+$('#number').val()+'">Chat Now</a> ');
+});</script>
+  </body>
+</html>
